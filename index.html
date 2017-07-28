@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对方向你扔了个垃圾</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+</head>
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #872123;
+        font-family: 'Microsoft Yahei', '微软雅黑', Kefa, Cambria, monospace;
+        font-size: .4rem;
+        overflow: hidden;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    </style>
+<body>
+
+<div id="musicControl" style="display:none;">
+    <audio id="bg_music" loop>
+        <source src="mus.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<div class="music-icon music-act"></div>
+
+<audio id="hit_music">
+    Your browser does not support the <code>audio</code> element.
+    <source src="hit.mp3" type="audio/mpeg">
+</audio>
+
+
+<div id="container">
+
+    <div id="touch_btn">
+        <div class="btn_circle"></div>
+        <div class="btn_circle"></div>
+        <div class="btn_circle"></div>
+    </div>
+
+    <div id="stage_init">
+        <div class="bg_deco"></div>
+        <div class="bg_deco"></div>
+        <span class="line_v line1"></span>
+        <span class="line_v line2"></span>
+        <span class="line_h"></span>
+    </div>
+    <div id="start">
+        <div class="start_logo">
+            <img src="img/start_logo.png">
+        </div>
+        <div id="intro_text">
+            <p>你知道吗?</p>
+            <p>一场马拉松中</p>
+            <p>参与者所制造的垃圾<br>是<br>他们日常一天垃圾量的6倍！</p>
+        </div>
+        <div class="button" id="game_start_btn"><img src="img/start_btn.png"></div>
+    </div>
+
+    <div id="game_tip">
+        <div id="trash_list">
+            <div class="trash_el"><img src="img/trash1.png"></div>
+        </div>
+        <div id="tip_text">点击按钮区域</div>
+        <div id="tip_hand"><img src="img/click_hand.png"></div>
+        <div id="play_btn">开始游戏</div>
+    </div>
+
+    <div id="count_down">
+        <p>3</p>
+        <p>2</p>
+        <p>1</p>
+        <p>GO!</p>
+    </div>
+
+    <div id="gameUI">
+
+    </div>
+
+    <div id="end">
+        <div id="ending_word">
+            <p>惊了! 你跑了</p>
+            <p><span id="final_score">0</span></p>
+            <p>在玩家中你是NO.<span id="final_ranking">0</span></p>
+        </div>
+        <div class="end_btn">
+            <div id="info_btn"><img src="img/info_btn.png"></div>
+            <div id="report_btn" ><img src="img/report_btn.png"></div>
+            <div id="replay_btn" ><img src="img/replay_btn.png"></div>
+        </div>
+
+        <div id="mls_info">
+            <p>一场马拉松</p>
+            <p><img src="img/trash4.png"></p>
+            <p>能用掉75万个纸杯</p>
+            <p><img src="img/trash3.png"></p>
+            <p>25.9万支瓶装水</p>
+            <p><img src="img/trash2.png"></p>
+            <p>18万块海绵等等</p>
+        </div>
+
+        <div id="dev_info">
+            <p>编辑：陈嘉慧</p>
+            <p>设计：冷斌</p>
+            <p>开发：郑蔚琦（实习） 韦梦</p>
+            <p>数据来源：自然之友</p>
+            <p>背景音乐：Chibi Ninja by Eric Skiff (under CC license)</p>
+        </div>
+
+        <div class="start_logo">
+            <img src="img/start_logo.png">
+        </div>
+    </div>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+
+
+</html>
